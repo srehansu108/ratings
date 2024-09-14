@@ -1,0 +1,113 @@
+/* Question.css */
+
+.question-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee); /* Soft gradient background */
+    color: #34495e;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+  }
+  
+  .question-screen h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease; /* Sliding in animation */
+  }
+  
+  .question-screen p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #34495e;
+    animation: fadeInText 1.5s ease-in-out;
+  }
+  
+  /* Styling for the input fields (rating & textarea) */
+  input[type="number"], textarea {
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="number"]:focus, textarea:focus {
+    border-color: #2980b9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the navigation buttons */
+  .navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    padding-top:35px;
+  }
+  
+  .navigation-buttons button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navigation-buttons button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px); /* Lift effect on hover */
+  }
+  
+  .navigation-buttons button:active {
+    transform: translateY(0); /* Return to normal on click */
+    background-color: #1c5d99;
+  }
+  
+  /* Smooth fade-in animation for the entire question screen */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Slide-in animation for heading */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-in animation for text */
+  @keyframes fadeInText {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

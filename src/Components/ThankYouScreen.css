@@ -1,0 +1,47 @@
+/* ThankYouScreen.css */
+
+.thank-you-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ecf0f1; /* Light background color */
+    color: #2c3e50; /* Dark text color */
+    padding: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .thank-you-screen h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: slideIn 0.7s ease-in-out;
+  }
+  
+  .thank-you-screen p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  /* Fade-in animation for the entire screen */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Slide-in animation for the text */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,79 @@
+/* Confirmation.css */
+
+.confirmation-dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay background */
+    color: #ecf0f1;
+    padding: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .confirmation-dialog p {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #ecf0f1;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.7s ease-in-out;
+  }
+  
+  .confirmation-dialog button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .confirmation-dialog button:hover {
+    background-color: #27ae60;
+    transform: translateY(-3px);
+  }
+  
+  .confirmation-dialog button:active {
+    transform: translateY(0);
+    background-color: #1e8449;
+  }
+  
+  .confirmation-dialog button:nth-child(2) {
+    background-color: #e74c3c; /* Red color for 'No' button */
+  }
+  
+  .confirmation-dialog button:nth-child(2):hover {
+    background-color: #c0392b;
+  }
+  
+  .confirmation-dialog button:nth-child(2):active {
+    background-color: #96281b;
+  }
+  
+  /* Fade-in animation for the entire dialog */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Slide-in animation for the text */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
